@@ -4,6 +4,8 @@
 - Para rodar as classes go, utilize o comando `go run {{nome_da_classe}}`
 - Para rodar os testes, utilize o comando `go test`
 
+- Docs: https://docs.github.com/pt/actions/guides
+
 ---
 
 ### Fazendo o commit passar na pipeline

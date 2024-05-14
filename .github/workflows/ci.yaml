@@ -1,5 +1,8 @@
 name: ci-golang-workflow
-on: [push]                        # Vai chamar essa ação sempre que fizer um push
+on:
+  pull_request:                      # Vai chamar a ação sempre que fizer um pull_request na branch develop
+    branches:
+      - develop
 jobs:
   check-application:
     runs-on: ubuntu-latest        # Máquina para rodar a aplicação
