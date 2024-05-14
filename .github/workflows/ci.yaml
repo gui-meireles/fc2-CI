@@ -1,15 +1,18 @@
 name: ci-golang-workflow
 on:
-  pull_request:                      # Vai chamar a ação sempre que fizer um pull_request na branch develop
+  pull_request:                         # Vai chamar a ação sempre que fizer um pull_request na branch develop
     branches:
       - develop
+strategy:
+  matrix:
+    go: ['1.14','1.15']                 # Versões do Go em que serão testadas a aplicação
 jobs:
   check-application:
-    runs-on: ubuntu-latest        # Máquina para rodar a aplicação
+    runs-on: ubuntu-latest              # Máquina para rodar a aplicação
     steps:
-      - uses: actions/checkout@v2 # Pega os dados do push e baixa na máquina escolhida
-      - uses: actions/setup-go@v2 # Esse actions/setup-go é o nome do repositório do Git
+      - uses: actions/checkout@v2       # Pega os dados do push e baixa na máquina escolhida
+      - uses: actions/setup-go@v2       # Esse actions/setup-go é o nome do repositório do Git
         with:
-          go-version: 1.15        # Versão do Go
-      - run: go test              # Comandos que serão executados
+          go-version: ${{ matrix.go }}  # Versão do Go
+      - run: go test                    # Comandos que serão executados
       - run: go run math.go
