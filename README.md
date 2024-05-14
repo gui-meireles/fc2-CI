@@ -26,3 +26,10 @@ não passará.
 
 ![img_2.png](img_2.png)
 ![img_1.png](img_1.png)
+
+---
+
+### Faça pull request para a develop
+
+- Ao fazer pull request para a branch develop, vamos obrigar o nosso
+código a passar pela pipeline do Actions.
