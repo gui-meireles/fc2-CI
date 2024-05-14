@@ -18,3 +18,8 @@ do nosso repositório
 
 ### Fazendo o commit reprovar na pipeline
 
+- Ao mudarmos o nome da função da classe `math.go` e não atualizarmos
+na classe de teste, ao fazer o push e rodar a pipeline, nosso teste
+não passará.
+
+![img_1.png](img_1.png)
