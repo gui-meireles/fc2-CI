@@ -33,3 +33,6 @@ não passará.
 
 - Ao fazer pull request para a branch develop, vamos obrigar o nosso
 código a passar pela pipeline do Actions.
+
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
