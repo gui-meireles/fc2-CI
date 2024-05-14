@@ -22,4 +22,5 @@ do nosso repositório
 na classe de teste, ao fazer o push e rodar a pipeline, nosso teste
 não passará.
 
+![img_2.png](img_2.png)
 ![img_1.png](img_1.png)
