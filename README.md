@@ -36,3 +36,13 @@ código a passar pela pipeline do Actions.
 
 ![img_3.png](img_3.png)
 ![img_4.png](img_4.png)
+
+---
+
+### Dockerfile (Criar uma imagem do nosso projeto)
+
+- Temos um Dockerfile que gera um container do nosso projeto GoLang
+- Para criar o container, digite o comando na raiz do projeto: `docker build -t teste .`
+- Para roda-lo na sua máquina, digite o comando: `docker run --rm teste`, o resultado deve ser 20.
+
+![img_5.png](img_5.png)
