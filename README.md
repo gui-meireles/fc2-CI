@@ -46,3 +46,11 @@ código a passar pela pipeline do Actions.
 - Para roda-lo na sua máquina, digite o comando: `docker run --rm teste`, o resultado deve ser 20.
 
 ![img_5.png](img_5.png)
+
+---
+
+### GitHub Actions e Docker
+
+- Podemos testar nossas imagens Docker no GitHub Actions, a configuração
+estará no arquivo `ci.yaml`, porém vou deixar a documentação abaixo:
+> https://github.com/marketplace/actions/build-and-push-docker-images
