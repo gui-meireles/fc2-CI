@@ -54,3 +54,17 @@ código a passar pela pipeline do Actions.
 - Podemos testar nossas imagens Docker no GitHub Actions, a configuração
 estará no arquivo `ci.yaml`, porém vou deixar a documentação abaixo:
 > https://github.com/marketplace/actions/build-and-push-docker-images
+
+---
+
+### Cadastrar secrets no GitHub
+
+- Alguns dados pessoais não podem ser colocados em repositórios públicos,
+com isso, podemos cadastra-los dentro de nossa conta do GitHub, como é
+o caso das nossas secrets do DockerHub dentro do `ci.yaml`.
+- Dentro do seu projeto no Git, abra `Settings`, expanda `Secrets and variables`,
+clique em `Actions` e logo após em `New Repository Secret`
+
+**~~Obs:~~** Tenha uma conta no DockerHub: https://hub.docker.com/
+![img_6.png](img_6.png)
+![img_7.png](img_7.png)
