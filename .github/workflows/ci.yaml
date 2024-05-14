@@ -1,0 +1,12 @@
+name: ci-golang-workflow
+on: [push]                        # Vai chamar essa ação sempre que fizer um push
+jobs:
+  check-application:
+    runs-on: ubuntu-latest        # Máquina para rodar a aplicação
+    steps:
+      - uses: actions/checkout@v2 # Pega os dados do push e baixa na máquina escolhida
+      - uses: actions/setup-go@v2 # Esse actions/setup-go é o nome do repositório do Git
+        with:
+          go-version: 1.15        # Versão do Go
+      - run: go test              # Comandos que serão executados
+      - run: go run math.go
