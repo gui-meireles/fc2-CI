@@ -1,8 +1,8 @@
 name: ci-golang-workflow
 on:
-  pull_request:                         # Vai chamar a ação sempre que fizer um pull_request na branch develop
+  pull_request:                         # Vai chamar a ação sempre que fizer um pull_request na branch develop, podemos mudar para commit, delete, etc..
     branches:
-      - develop
+      - develop                         # Branch que rodará a aplicação
 jobs:
   check-application:
     runs-on: ubuntu-latest              # Máquina para rodar a aplicação
@@ -33,7 +33,7 @@ jobs:
           push: true
           tags: guilhermemmnn/fc2-ci:latest # Utilize o mesmo nome de usuário do DockerHub
 
-    # Versões do Go em que serão testadas a aplicação caso esteja habilitado
+    # Strategy Matrix -> Podemos testar a aplicação em mais de uma versão do Go (por exemplo)
 #    strategy:
 #      matrix:
 #        go: [ '1.14','1.15' ]
